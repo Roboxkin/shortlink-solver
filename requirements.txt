@@ -1,0 +1,11 @@
+ua-generator
+Flask==3.0.3
+fastapi
+colored
+aiofiles
+uvicorn
+python-multipart
+requests
+Proxy-List-Scrapper
+pytest-playwright
+lxml
