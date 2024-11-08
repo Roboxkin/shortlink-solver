@@ -202,3 +202,10 @@ blacklist = []
 # Forced error
 error = ["error.error"]
 ```
+> Support the author and the project
+![author](img/coffe.png)
+Bitcoin — 1FkgsC87HTJiYjwjyZDTt1GQ1xACj8dz2D  
+Ethereum — 0x0aD44a4566f62D4f6A2772815D90B1C84a426F56  
+Tether USD (TRC20) — TPnb9xUtDzpAPXtY1DnSNRxdLYPkFwf5Aj  
+TRX — TPnb9xUtDzpAPXtY1DnSNRxdLYPkFwf5Aj  
+Bitcoin Cash — bitcoincash:qr2qmsfq9f2fxf86fyppd0jvulrkufzsqu793q2r2j
