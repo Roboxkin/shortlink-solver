@@ -204,7 +204,8 @@ error = ["error.error"]
 ```
 > Support the author and the project
 
-![Support the author and the project](img/coffe.png)
+![Support the author and the project](https://github.com/user-attachments/assets/b49c2b71-a6cc-44b9-ba6f-9f084784c529)
+
 Bitcoin — 1FkgsC87HTJiYjwjyZDTt1GQ1xACj8dz2D  
 Ethereum — 0x0aD44a4566f62D4f6A2772815D90B1C84a426F56  
 Tether USD (TRC20) — TPnb9xUtDzpAPXtY1DnSNRxdLYPkFwf5Aj  
