@@ -71,6 +71,7 @@ def solve_recaptcha(sitekey, url, shortid, version='v2'):
             time.sleep(2)
             return None
 
+        print(request_data)
         idcap = request_data.split('|')[1]
         time_wait = 5
 
