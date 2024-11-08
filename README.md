@@ -17,7 +17,7 @@ This project is a server application written in Python using FastAPI to solve pa
 ```PS D:\short> & d:/short/.venv/Scripts/python.exe d:/short/main.py
 INFO:     Started server process [16964]
 INFO:     Waiting for application startup.
-WARNING:root: WARNING: >>> Hosts entries added. <<< 
+WARNING:root: WARNING: Hosts entries added.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
