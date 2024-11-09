@@ -111,8 +111,8 @@ app = FastAPI(lifespan=lifespan)
 
 # (en) Lists of domains to replace
 # (ru) Списки доменов для замены
-first_list_domain = ["iir.la", "clk.wiki"]
-second_list_domain = ["oii.la", "clk.kim"]
+first_list_domain = ["iir.la", "clk.wiki", "clik.pw"]
+second_list_domain = ["oii.la", "clk.kim", "wordcounter.icu/go2"]
 
 # (en) Create a dictionary for replacements
 # (ru) Создаем словарь для замен
@@ -207,10 +207,9 @@ async def domain_from_url(url):
 # (en) Asynchronous function to check which group the domain belongs to
 # (ru) Асинхронная функция для проверки, к какой группе принадлежит домен
 async def check_donor_group(shorturl):
-    shorturl = await replace_domain(shorturl, replacement_dict)
     protocol, short_domain, short_code = await domain_from_url(shorturl)
 
-    group_one = ["ccurl.net"]
+    group_one = ["ccurl.net", "wordcounter.icu"]]
     group_two = []
     group_three = []
     group_four = []
@@ -257,6 +256,7 @@ async def result_file(shortid, shorturl, faucet):
     faucet_domain = faucet
 
     while True:
+        shorturl = await replace_domain(shorturl, replacement_dict)
         group, short_domain = await check_donor_group(shorturl)
         if group in ["cloudflare", "blacklist", "no_group", "error"]:
             logging.warning(
