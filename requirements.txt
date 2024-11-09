@@ -1,4 +1,3 @@
-ua-generator
 Flask==3.0.3
 fastapi
 colored
@@ -7,5 +6,4 @@ uvicorn
 python-multipart
 requests
 Proxy-List-Scrapper
-pytest-playwright
 lxml
