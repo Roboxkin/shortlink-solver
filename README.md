@@ -46,8 +46,10 @@ import time
 
 short_url = "https://ccurl.net/Y6FekxlS"
 site_host = "www.google.com"
+first_host = "http://127.0.0.1:8000/short"
+check_host = "http://127.0.0.1:8000/check"
 
-response = requests.post("http://127.0.0.1:8000/short", data={"shorturl": short_url, "faucet": site_host})
+response = requests.post(first_host, data={"shorturl": short_url, "faucet": site_host})
 
 if "YOUR ID" in response.text:
     id_start = response.text.find("YOUR ID = ") + len("YOUR ID = ")
@@ -63,7 +65,7 @@ time_to_sleep = 5
 while True:
     time.sleep(time_to_sleep)
 
-    response = requests.post("http://127.0.0.1:8000/check", data={"my_id": id_value})
+    response = requests.post(check_host, data={"my_id": id_value})
 
     if "Successfully" in response.text:
         solve_start = response.text.find("solve short = ") + len("solve short = ")
