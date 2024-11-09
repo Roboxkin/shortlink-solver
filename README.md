@@ -37,6 +37,9 @@ IMPORTANT: After reading the result, the file is deleted from the server
 ## How to send a short link to a solution (python)
 ```python
 # example code
+# IMPORTANT: There are times when you need to check if a domain will work with a particular group.
+# in this case:
+# site_host = "test.test"
 
 import requests
 import time
