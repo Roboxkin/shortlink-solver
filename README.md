@@ -145,12 +145,15 @@ All functions are executed asynchronously, which means there will be no downtime
 ```
 ```
 Bypassing Cloudflare:
-When the application is launched, records from hosts_entries.txt are added to the system host file. If you have an IP address from the domain that is used in the short link, add it to the hosts_entries.txt file so that requests to this domain are made directly.  
+When the application is launched, records from hosts_entries.txt are added to the system host file.
+If you have an IP address from the domain that is used in the short link,
+add it to the hosts_entries.txt file so that requests to this domain are made directly.  
 **IMPORTANT:** When the application is stopped, records from the system host file are deleted.
 ```
 ```
 Captcha solving:
-At the moment, the application uses the code for the XEvil program, you can add your own service to solve the captcha.
+At the moment, the application uses the code for the XEvil program,
+you can add your own service to solve the captcha.
 ```
 ```
 Logging:
@@ -162,13 +165,16 @@ All functions are well commented in Russian and English.
 ```
 ```
 Domain Grouping:
-In fact, all sources of shorteners work on the same principle, but with minor differences. Therefore, bflo decided to write an application for domain groups.
+In fact, all sources of shorteners work on the same principle, but with minor differences.
+Therefore, bflo decided to write an application for domain groups.
 ```
 ```
 Change a domain from one to another:
-Sometimes tricky shorteners redirect from the first domain to the second, where you need to perform some actions, then redirect back to the first.
+Sometimes tricky shorteners redirect from the first domain to the second,
+where you need to perform some actions, then redirect back to the first.
 
-The system provides for this, if you know from which domain to which changes, you can add a domain to the list for substitution.
+The system provides for this, if you know from which domain to which changes,
+you can add a domain to the list for substitution.
 ```
 ## FAQ
 > How to increase or decrease the number of threads?
@@ -187,7 +193,8 @@ second_list_domain = ["oii.la", "clk.kim"] # List of new domains
 > What is a domain group?
 
 ```python
-# As already written above, shorteners are very similar to each other and in order not to write a template for each domain, they can be combined into one group.
+# As already written above, shorteners are very similar to each other and in order not
+# to write a template for each domain, they can be combined into one group.
 # Example:
 group_one = ["ccurl.net"] # domain list group_one.py
 group_two = []            # domain list group_two.py
